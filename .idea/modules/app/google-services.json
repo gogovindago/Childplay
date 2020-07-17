@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "927637309887",
+    "firebase_url": "https://childplay-45a51.firebaseio.com",
+    "project_id": "childplay-45a51",
+    "storage_bucket": "childplay-45a51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927637309887:android:584126295c9ed8f6edf90a",
+        "android_client_info": {
+          "package_name": "gk.child.test.online.rhythm.poem.childplay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927637309887-fcohdue0cj6erraa6kpfg35kfr8jbfjk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gk.child.test.online.rhythm.poem.childplay",
+            "certificate_hash": "ce1676a6d6608f67d1e99eeb4e330848127c8bc9"
+          }
+        },
+        {
+          "client_id": "927637309887-ko34fq8tjv07ps6in8hu4ntsq5nuesob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwK0K9a5gLKxIiaOAo1dgeMpDrEK8rU-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927637309887-ko34fq8tjv07ps6in8hu4ntsq5nuesob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
