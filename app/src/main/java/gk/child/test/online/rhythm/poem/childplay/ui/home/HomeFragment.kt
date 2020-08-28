@@ -19,6 +19,7 @@ class HomeFragment : Fragment() {
     private val TAG = "MainActivity"
 
     private var mAdView: AdView? = null
+
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
@@ -31,6 +32,12 @@ class HomeFragment : Fragment() {
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
+
+        textView.setOnClickListener(View.OnClickListener { view ->
+
+
+        })
+
 
 
         // Find Banner ad
