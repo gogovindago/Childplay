@@ -25,7 +25,11 @@ class FirebasePushNotificationActivity : BaseActivity() {
         //This method will use for fetching Token
         Thread(Runnable {
             try {
-                Log.i(TAG, FirebaseInstanceId.getInstance().getToken(getString(R.string.SENDER_ID), "FCM"))
+                FirebaseInstanceId.getInstance().getToken(getString(R.string.SENDER_ID), "FCM")?.let {
+                    Log.i(TAG,
+                        it
+                    )
+                }
             } catch (e: IOException) {
                 e.printStackTrace()
             }

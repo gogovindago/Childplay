@@ -1,7 +1,5 @@
 package gk.child.test.online.rhythm.poem.childplay
 
-import android.R.attr.name
-import android.R.id
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
@@ -130,7 +128,11 @@ class MainActivity : BaseActivity() {
         //This method will use for fetching Token
         Thread(Runnable {
             try {
-                Log.i(TAG, FirebaseInstanceId.getInstance().getToken(getString(R.string.SENDER_ID), "FCM"))
+                FirebaseInstanceId.getInstance().getToken(getString(R.string.SENDER_ID), "FCM")?.let {
+                    Log.i(TAG,
+                        it
+                    )
+                }
             } catch (e: IOException) {
                 e.printStackTrace()
             }

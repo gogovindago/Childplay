@@ -16,7 +16,6 @@ import java.util.*
 
 
 /** Created by Govind Kumar on 7/12/2020.
- ** PhpExpert
  **  govind224556@gmail.com
  **/
 class MyFirebaseMessagingService : FirebaseMessagingService() {
@@ -25,15 +24,15 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
     private lateinit var notificationManager: NotificationManager
     private val ADMIN_CHANNEL_ID = "Android4Dev"
 
-    override fun onNewToken(token: String?) {
+    override fun onNewToken(token: String) {
         super.onNewToken(token)
         Log.i(TAG, token)
     }
 
-    override fun onMessageReceived(remoteMessage: RemoteMessage?) {
+    override fun onMessageReceived(remoteMessage: RemoteMessage) {
         super.onMessageReceived(remoteMessage)
         remoteMessage?.let { message ->
-            Log.i(TAG, message.getData().get("message"))
+            message.getData().get("message")?.let { Log.i(TAG, it) }
 
             notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
